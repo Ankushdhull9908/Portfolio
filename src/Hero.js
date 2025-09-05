@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
       </div>
       <div className='bigright'>
-        <img src='/nobg2.png' alt='right'/>
+        <img src='/file.png' alt='right'/>
       </div>
       </div>
       

@@ -8,10 +8,13 @@ import './Container.css'
 import Projects from './Projects';
 import Certificates from './Certificates';
 import AboutHeading from './AboutHeading';
+import ContactMe from './ContactMe';
+import './App.css'
 
 function App() {
   return (
-    <div className="container">
+    <div className="app">
+      
       
     
       <Hero/>
@@ -19,8 +22,9 @@ function App() {
       <Aboutme/>
       <Skills/>
       <Projects/>
-      <Hr1/>
+     
       <Certificates/>
+      <ContactMe/>
       
     </div>
   );

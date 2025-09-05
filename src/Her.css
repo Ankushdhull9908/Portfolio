@@ -79,7 +79,7 @@
     }
 }
 
-button {
+.hero .big-left button {
     height: 60px;
     width: 120px;
    
@@ -97,10 +97,7 @@ button {
     margin: 10px 20px; 
 }
 
-button:hover {
-    
-    
-}
+
 
 .bigright {
     border: 6px solid; /* Thicker border to make the effect more visible */
@@ -170,7 +167,7 @@ button:hover {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        
     }
     
     .big-left{
@@ -183,7 +180,7 @@ button:hover {
     
     .bigright{ 
         position: relative;
-        top: 10px;
+        top: 0px;
         left: 80px;
         display: flex;
         justify-content: center;
@@ -195,6 +192,10 @@ button:hover {
        
     }
     
+
+    .bigright img{
+        height: 100%;
+    }
     
     
     .big-left p{
@@ -210,7 +211,7 @@ button:hover {
     
     
     
-    button {
+    .hero .big-left button {
         border: 2px solid whitesmoke;
         height: 40px;
         width: 100px; 

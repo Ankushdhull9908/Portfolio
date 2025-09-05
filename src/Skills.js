@@ -2,48 +2,62 @@ import React from 'react'
 import './Skills.css'
 
 export default function Skills() {
+
+
+  const skills = [
+  {
+    skilname: 'React Js',
+    src: 'react.png',
+    desc: 'Experienced in building modern, responsive, and scalable web applications using React JS with strong knowledge of components, hooks, and state management.'
+  },
+  {
+    skilname: 'JavaScript',
+    src: 'js.png',
+    desc: 'Proficient in JavaScript, with a solid understanding of ES6+ features, DOM manipulation, asynchronous programming, and creating dynamic, interactive web applications.'
+  },
+  {
+    skilname: 'Node Js',
+    src: 'nodejs.png',
+    desc: 'Skilled in developing fast and efficient backend services with Node.js, including building REST APIs, handling authentication, and working with middleware.'
+  },
+  {
+    skilname: 'MySQL',
+    src: 'mysql.png',
+    desc: 'Strong knowledge of MySQL for designing relational databases, writing optimized queries, and managing data integrity with structured schemas.'
+  },
+  {
+    skilname: 'MongoDB',
+    src: 'mongodb.png',
+    desc: 'Proficient in MongoDB for managing NoSQL databases, working with collections, aggregation pipelines, and integrating with Node.js for full-stack development.'
+  },
+  {
+    skilname: 'Python',
+    src: 'python.png',
+    desc: 'Experienced in Python programming for problem-solving, data structures, backend development, and writing clean, efficient, and maintainable code.'
+  }
+];
+
   return (
     
-      <div class="skills">
-                <div class="skillsHeading">
-                    <h1> Skills</h1>
-                    <hr id="fourthHR"/>
+      <div class="skills" id='skills'>
+                <div class="projectsHeading">
+                    <h1>Skills</h1>
+                    <hr id="fifthHR"/>
                 </div>
                 <div class="allskillsBox">
-                    <div class="react-box">
-                      <img src="react.png" alt='error'/>
-                      <h4>React JS</h4>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vel magni non tempora sed rerum natus </p>
-                    </div>
-                    <div class="jsBox">
-                      <img src="js.png" alt='error'/>
-                      <h4>JavaScript</h4>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vel magni non tempora sed rerum natus </p>
-                    </div>
-                    <div class="nodejsBox">
-                      <img src="nodejs.png" alt='error'/>
-                      <h4>Node JS</h4>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vel magni non tempora sed rerum natus </p>
-                    </div>
+                  {
+                     skills.map((i)=>{
+                      return(<div class="react-box">
+                      <img src={i.src} alt='error'/>
+                      <h4>{i.skilname}</h4>
+                      <p>{i.desc}</p>
+                    </div>)
+                     })
+                  }
+                    
+                    
                 </div>
-                <div class="allskillsBox2">
-                    <div class="mysqlBox">
-                       <img src="mysql.png" alt='error'/>
-                       <h4>My SQL</h4>
-                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vel magni non tempora sed rerum natus</p>
-                    </div>
-                    <div class="mongodbBox">
-                        <img src="mongodb.png" alt='error'/>
-                        <h4>Mongo DB</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vel magni non tempora sed rerum natus</p>
-                    </div>
-                    <div class="pythonBox">
-                        <img src="python.png" alt='error'/>
-                        <h4>Python</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vel magni non tempora sed rerum natus</p>
-                    </div>
-
-                </div>
+                
                     
                 
                 

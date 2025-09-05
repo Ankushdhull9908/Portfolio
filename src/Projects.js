@@ -3,32 +3,39 @@ import './Projetcs.css'
 
 
 export default function Projects() {
-    var url = "https://react-resp-electronic.vercel.app/"
+   
+
+     var projects = [
+      {projectname:"Social Media App (MERN + socket)" ,video:'sociamediapp.mp4',link:'https://social-media-till-skeleton.vercel.app/'},
+      {projectname:"Music Application Using REACT",video:"screenrecorder3.mp4",link:'https://boo-project-a3f2.vercel.app/'},
+      {projectname:"Food Ordering Application (MERN)",video:"screenrecord4.mp4",link:'https://boo-project-a3f2.vercel.app/'},
+,
+{projectname:"Full Stack Book delivery using JavaScript",video:"screenrecord2.mp4",link:'https://boo-project-a3f2.vercel.app/'}
+     ]
 
    
   return (
-    <div className='projects'>
+    <div className='projects' id='projects'>
         <div class="projectsHeading">
                     <h1> Projects</h1>
                     <hr id="fifthHR"/>
                 </div>
                 <div class="allprojectsBox">
-                    <div class="react-box1">
-                      <video src="screenrecord.mp4" muted loop autoPlay onClick={()=>{
-                        window.location.href = url;
+                  {
+
+                    projects.map((i)=>{
+                      return(<div class="react-box1">
+                      <video src={i.video} muted loop autoPlay onClick={()=>{
+                        window.location.href = i.link;
                       }}/>
                          
-                      <h4>E- Commerce Website using React JS</h4>
+                      <h4>{i.projectname}</h4>
                       
-                    </div>
-                    <div class="jsBox1">
-                    <video src="screenrecord2.mp4" muted loop autoPlay onClick={()=>{
-                           window.location.href = "https://boo-project-a3f2.vercel.app/";
-                    }} />
+                    </div>)
+                    })
+                  }
                     
-                      <h4>Full Stack Book delivery using JavaScript</h4>
-                      
-                    </div>
+                    
                     
                     
                 </div>

@@ -17,6 +17,10 @@
     display: none;
 }
 
+li a{
+    color: white;
+    text-decoration: none;
+}
 .VerticalNav{
     display: none;
     position: absolute;
@@ -94,13 +98,43 @@
     
 }
 
+.verticalnavbar{
+    height: 100vh;
+    z-index: 1;
+    width: 50%;
+    background-color: red;
+
+}
+
+
+@media (max-width:480px) {
+    .navigation{
+        height: 10vh;
+    }
+
+    
+    
+
+
+    .logo{
+    
+        position: absolute;
+        left: 0px;
+        height: 50px;
+        width: 100px;
+        cursor: pointer;
+        
+    }
+
+    
+}
+
+
 @media (max-width:760px) {
     .navigation{
         height: 10vh;
     }
-    .navigation ul{
-        display: none;
-    }
+    
 
 
     .logo{

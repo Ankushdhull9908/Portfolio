@@ -1,3 +1,36 @@
+.aboutME{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    position: relative;
+    
+    color: white;
+     height: 100vh;
+     width: 90%;
+     margin: auto;
+    
+    
+}
+
+.aboutmeheading{
+    height: 20%;
+    width: 90%;
+    
+    border:none;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutmeheading p{
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+}
+
 .aboutPara{
     position: relative;
     display: flex;
@@ -5,41 +38,45 @@
     justify-content: space-around;
     border-radius: 10px;
     flex-shrink: 0;
-    height: 90%;
+    height: 70%;
     width: 50%;
-    
+   
     margin: auto;
     
 }
 .aboutleft{
     flex-shrink: 0;
     height: 100%;
-    width: 50%;
+    width: 40%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.leftimageandpara{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+  
 }
 
 .aboutleft img{
-    height: 90%;
-    width: 70%;
+    height: 70%;
+    width: auto;
+    border-radius: 15px;
+    align-self: right;
 }
 
-.aboutME{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;
-    position: relative;
-    top:100px;
-    background-color: black;
-    color: white;
-     height: 120%;
-     width: 90%;
-     margin: auto;
-    
-}
+
 
 .aboutHeading{
-    background-color: red;
-    height: 8%;
+  
+    height: 20%;
     width: 100%;
 }
 
@@ -117,6 +154,26 @@
 }
 
 
+
+
+
+
+@media (max-width:480px) {
+
+    .aboutME{
+       
+    justify-content: space-around;
+    
+     margin: auto;
+    }
+    .leftimageandpara{
+        flex-direction: column;
+        justify-content: flex-start;
+    gap: 10px;
+    }
+
+}
+
 @media (max-width:760px) {
     .aboutPara{
         position: relative;
@@ -124,29 +181,34 @@
         flex-direction: column;
         justify-content: space-around;
         border-radius: 10px;
-        top:80px;
-        height: 40%;
-        width: 75%;
+        
+        height: 60%;
+        width: 80%;
         margin: auto;
         
     }
+
+    
+.aboutmeheading{
+    height: 10%;
+   
+}
+
+.aboutmeheading p{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
     
     .aboutME{
-
-        position: relative;
-        top: 70px;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: black;
-    color: white;
-         height: 120%;
-         width: 90%;
-         margin: auto;
-        
+      height: 100vh;
+      top: 10px;  
+     
     }
 
     .aboutME h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     
     .aboutPara p{
@@ -164,8 +226,8 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: left;
-        height: 10%;
-        width: 30%;
+        height: 25%;
+        width: 100%;
         
     }
     
@@ -199,20 +261,11 @@
     
 
     .aboutleft{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
-        top: 30px;
-        height: 55%;
-        width: 60%;
-        border-radius: 20px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        border-image: linear-gradient(to right, 
-        red 20%, /* First 20% is red */
-        white 20%, /* Next 20% is white */
-        rgba(255, 255, 255, 0) 60% /* The remaining 60% is transparent */
-    ) 1;
+        
+        height: 40%;
+        width: 50%;
+        
     }
 
     .aboutleft img{
